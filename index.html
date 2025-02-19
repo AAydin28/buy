@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finans Dashboard</title>
+    <link rel="stylesheet" href="yatırım.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Döviz Kuru Bölümü -->
+    <div class="balance">
+      <h1>
+        $<span id="main-value">1324</span><small id="decimal-value">26</small>
+      </h1>
+      <div class="currency-selector">
+        <span onclick="changeCurrency('USD')" class="active">USD</span>
+        <span onclick="changeCurrency('EUR')">EUR</span>
+        <span onclick="changeCurrency('BTC')">BTC</span>
+        <span onclick="changeCurrency('ETH')">ETH</span>
+      </div>
+    </div>
+
+    <!-- Butonlar -->
+    <div class="buttons">
+      <div class="btn"><i class="fa-solid fa-plus"> </i> Add Money</div>
+      <div class="btn"><i class="fa-solid fa-arrow-right-arrow-left"></i> Exchange</div>
+      <div class="btn"><i class="fa-solid fa-circle-info"></i></i> Details</div>
+      <div class="btn"><i class="fa-solid fa-bars"></i> More</div>
+    </div>
+
+    <!-- İşlem Geçmişi -->
+    <div class="transactions">
+      <div class="transaction">
+        <div>
+          <img src="pngwing.com (13).png" alt="İNVİNDİA Logo">
+          <P style="font-size: 15px;">İNVİNDİA</P>
+          <br /><small style="margin-left: 10px;">Dün, 13:35</small>
+        </div>
+        <div>- $17.80</div>
+      </div>
+      
+      <div class="transaction">
+        <div>
+          <img src="pngwing.com (14).png" alt="Tesla Logo">
+          <P style="font-size: 15px;">TESLA</P>
+          <br /><small style="margin-left: 10px;">27 Eylül, 18:21</small>
+        </div>
+        <div>- $10,000.00</div>
+      </div>
+    </div>
+    <script src="yatırım.js"></script>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #121212;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Döviz Kuru Bölümü */
+.balance {
+    margin-bottom: 20px;
+}
+
+.balance h1 {
+    font-size: 50px;
+}
+
+.balance small {
+    color: gray;
+    font-size: 14px;
+}
+
+/* Para Birimi Seçme */
+.currency-selector {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.currency-selector span {
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background: #222;
+    transition: 0.3s;
+}
+
+.currency-selector span.active {
+    background: #ffd61f;
+    color: black;
+    font-weight: bold;
+}
+
+/* Butonlar */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 15px;
+    background: #222;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #051720;  /* Hover durumunda arka plan rengi */
+    transform: scale(1.05);  /* Hover durumunda buton büyür */
+  }
+  
+  /* İkonların stili */
+  .btn i {
+    margin-right: 8px;  /* İkon ile metin arasına boşluk ekler */
+    font-size: 20px;
+    color: #ffd61f;  /* İkon boyutu */
+  }
+  
+.transactions {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+  padding: 15px;
+  background: #222;
+  border-radius: 10px;
+}
+
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #333;
+}
+
+.transaction:last-child {
+  border-bottom: none;
+}
+
+.transaction div {
+  display: flex;
+  align-items: center;
+}
+
+.transaction img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.transaction small {
+  color: #aaa;
+  font-size: 0.8em;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 600px) {
+    .buttons {
+        grid-template-columns: 1fr;
+    }
+
+    .balance h1 {
+        font-size: 40px;
+    }
+
+    .currency-selector span {
+        padding: 5px 10px;
+    }
+}
