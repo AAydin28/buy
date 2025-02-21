@@ -10,13 +10,13 @@ body {
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background: #073b4c;
+    background: white;
 }
 .container {
     width: 100%;
     height: 100vh;
     max-width: 100%;
-    background: #00132d;
+    background-color: white;
     padding: 20px;
     border-radius: 0;
     box-shadow: none;
@@ -34,7 +34,7 @@ body {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 15px;
-    color: #ffd61f;
+    color: black;
 }
 .description {
     color: #666;
@@ -63,14 +63,14 @@ body {
     color: white;
     border-style: solid;
     border-width: px;
-    border-color: #ffd61f;
+    border-color: black;
 }
 .btn-secondary {
     background: #eee;
     color: #333;
     border-style: solid;
     border-width: 3px;
-    border-color: #ffd61f;
+    border-color: #eee;
 }
 @media (max-width: 600px) {
     .container {
